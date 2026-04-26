@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be Mine 💖</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- loading -->
+<div id="loadingScreen">
+    <div class="loading-text">Loading something made with love... 💖</div>
+    <div id="countdown">3</div>
+</div>
+
+<audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<canvas id="fireworks"></canvas>
+
+<!-- particles -->
+<div class="mega-hearts"></div>
+<div class="mega-sparkles"></div>
+<div class="rose-container"></div>
+<div class="bokeh-container"></div>
+
+<div class="blur-circle circle1"></div>
+<div class="blur-circle circle2"></div>
+<div class="blur-circle circle3"></div>
+
+<!-- transition -->
+<div id="transitionScreen" class="transition-screen">
+    <h1>I knew it 😚💖</h1>
+</div>
+
+<!-- PHASE 1 -->
+<section id="screen1" class="screen active hiddenStart">
+    <div class="pulse-heart">❤️</div>
+
+    <img id="cat" class="cat" src="https://cdn-icons-png.flaticon.com/512/616/616430.png">
+    <div id="catText" class="cat-text">Please say yes 🥺</div>
+
+    <div class="question-box">
+        <h2>Will you be mine? 🥺💍💖</h2>
+        <p id="changingQuote">I made this only for you 💌</p>
+
+        <div class="buttons">
+            <button id="yesBtn">Yes 💖</button>
+            <button id="noBtn">No 🙈</button>
+        </div>
+    </div>
+</section>
+
+<!-- PHASE 2 -->
+<section id="screen2" class="screen">
+    <div class="balloons"></div>
+
+    <div class="gift-pedestal">
+        <div class="gift-glow"></div>
+        <div class="gift-text">Press the gift for surprise 🎁🎉</div>
+        <div class="gift-hearts">💖 ✨ 💗 ✨ 💖</div>
+        <div id="gift" class="gift">🎁</div>
+    </div>
+
+    <div id="surpriseContent" class="hidden">
+        <div class="content-wrapper">
+            <div class="slideshow">
+                <img id="slideImage" src="photo.jpeg">
+            </div>
+
+            <div class="letter">
+                <h3>💌 For You</h3>
+                <p id="typedText"></p>
+            </div>
+        </div>
+
+        <h2 class="final-title">Prettiest woman ever met 💖</h2>
+
+        <button id="toReasons" class="nextBtn">There is more 💌</button>
+    </div>
+</section>
+
+<!-- PHASE 3 -->
+<section id="screen3" class="screen">
+    <h1 class="phase-title">Reasons why you are special to me 💖</h1>
+
+    <div class="reasons-container">
+        <div class="reason-card">Your smile has this quiet magic… it makes even my worst days feel lighter.</div>
+        <div class="reason-card">Your eyes say things that words never could… and I get lost in them every time.</div>
+        <div class="reason-card">Your voice feels like comfort… no matter what’s going on, it calms me instantly.</div>
+        <div class="reason-card">The way you care for people… it’s rare, pure, and honestly one of the most beautiful things about you.</div>
+    </div>
+
+    <button id="toGame" class="nextBtn">One last thing 😚</button>
+</section>
+
+<!-- PHASE 4 -->
+<section id="screen4" class="screen">
+    <h1 class="phase-title">Before you leave, answer this 😚</h1>
+
+    <div class="game-box">
+        <p>Who is cutest? 😼</p>
+        <button class="gameBtn">Me</button>
+        <button class="gameBtn">Obviously Me</button>
+
+        <p>Did you like this website? 💖</p>
+        <button class="gameBtn">Yes</button>
+        <button class="gameBtn">Of course</button>
+
+        <p>Should we make more memories? 🌸</p>
+        <button class="gameBtn">100% Yes</button>
+        <button class="gameBtn">Absolutely</button>
+    </div>
+
+    <button id="finalPopupBtn" class="nextBtn">Complete Mission 🎯</button>
+</section>
+
+<!-- final popup -->
+<div id="finalPopup" class="final-popup">
+    <div class="popup-box">
+        <h1>Mission complete, now I deserve a real yes 😚</h1>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
